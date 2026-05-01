@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">parcial-1-am-acn4b-montealegre-nievas</string>
+    <string name="buttonmercadopago">buttonMercadoPago</string>
+    <string name="buttonModo">imageButton2</string>
+    <string name="buttonPaypal">imageButton2</string>
+    <string name="buttonVisa">imageButton4</string>
+    <string name="buttonTransferencia">buttonTransferencia</string>
+    <string name="donaciones">Donaciones</string>
+    <string name="donacionesExplicacion">Name</string>
+    <string name="texto_explicativo">texto explicativo</string>
+    <string name="textoExplicativo">textoExplicativo</string>
 </resources>

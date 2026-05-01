@@ -19,7 +19,7 @@
             android:id="@+id/buttonMercadoPago"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:contentDescription="buttonMercadoPago"
+            android:contentDescription="@string/buttonmercadopago"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.185"
@@ -35,30 +35,30 @@
             android:layout_marginTop="36dp"
             android:layout_marginEnd="176dp"
             android:layout_weight="1"
-            android:text="Donaciones"
+            android:text="@string/donaciones"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/buttonModo"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:contentDescription="imageButton2"
+            android:contentDescription="@string/buttonModo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintHorizontal_bias="0.807"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.628"
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/buttonPaypal"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="20dp"
-            android:contentDescription="imageButton2"
+            android:contentDescription="@string/buttonPaypal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.2"
@@ -68,11 +68,11 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/buttonTransferencia"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_marginTop="20dp"
-            android:contentDescription="imageButton4"
+            android:contentDescription="@string/buttonTransferencia"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.811"
@@ -83,17 +83,18 @@
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="289dp"
-            android:layout_height="181dp"
+            android:layout_width="306dp"
+            android:layout_height="178dp"
             android:ems="10"
+            android:hint="@string/textoExplicativo"
             android:inputType="text"
-            android:text="Name"
+            android:text="@string/donacionesExplicacion"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintHorizontal_bias="0.48"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.232" />
+            app:layout_constraintVertical_bias="0.238" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
