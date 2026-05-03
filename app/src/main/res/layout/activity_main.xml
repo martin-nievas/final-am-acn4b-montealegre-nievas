@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="410dp"
         android:layout_height="727dp"
-        android:background="#E7C6A1"
+        android:background="@color/appBackgroundColour"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,9 +36,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:layout_marginEnd="176dp"
+            android:layout_marginEnd="140dp"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="4dp"
             android:text="@string/donaciones"
+            android:textColor="@color/DonacionesTitleColour"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,8 +97,9 @@
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="306dp"
-            android:layout_height="178dp"
+            android:layout_width="287dp"
+            android:layout_height="104dp"
+            android:autofillHints="<@string/AutofillHintTextoExplicativo"
             android:ems="10"
             android:hint="@string/textoExplicativo"
             android:inputType="text"
@@ -101,10 +107,10 @@
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.236" />
+            app:layout_constraintVertical_bias="0.158" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
