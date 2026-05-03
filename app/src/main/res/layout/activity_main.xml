@@ -13,23 +13,9 @@
         android:background="@color/appBackgroundColour"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/buttonMercadoPago"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:contentDescription="@string/buttonmercadopago"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.185"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.628"
-            tools:srcCompat="@drawable/mp_rgb_handshake_color_vertical" />
 
         <TextView
             android:id="@+id/text_donaciones"
@@ -47,70 +33,131 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/buttonModo"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:contentDescription="@string/buttonModo"
-            android:scaleType="fitCenter"
+        <LinearLayout
+            android:id="@+id/TextsBox"
+            android:layout_width="408dp"
+            android:layout_height="238dp"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.807"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.628"
-            tools:srcCompat="@drawable/modo_seeklogo" />
+            app:layout_constraintVertical_bias="0.229">
 
-        <ImageButton
-            android:id="@+id/buttonPaypal"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="20dp"
-            android:contentDescription="@string/buttonPaypal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.893"
-            tools:srcCompat="@drawable/imagen_paypal"
-            android:scaleType="fitCenter"
-            android:background="?android:attr/selectableItemBackground"/>
+            <LinearLayout
+                android:id="@+id/FAQ1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/buttonTransferencia"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/buttonTransferencia"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.811"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.892"
-            tools:srcCompat="@drawable/imagen_banco"
-            android:scaleType="fitCenter"
-            android:background="?android:attr/selectableItemBackground"/>
+                <EditText
+                    android:id="@+id/QuestionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="104dp"
+                    android:autofillHints="<@string/AutofillHintTextoExplicativo"
+                    android:ems="10"
+                    android:hint="@string/pregunta"
+                    android:inputType="text"
+                    android:text="@string/questionText"
+                    app:autoSizeTextType="uniform" />
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="287dp"
-            android:layout_height="104dp"
-            android:autofillHints="<@string/AutofillHintTextoExplicativo"
-            android:ems="10"
-            android:hint="@string/textoExplicativo"
-            android:inputType="text"
-            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam"
-            app:autoSizeTextType="uniform"
+                <TextView
+                    android:id="@+id/AnswerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:text="@string/answerText"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FAQ2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iconsBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.158" />
+            app:layout_constraintVertical_bias="0.889">
+
+            <LinearLayout
+                android:id="@+id/iconsBoxFirstRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonMercadoPago"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/buttonmercadopago"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@drawable/mp_rgb_handshake_color_vertical" />
+
+                <ImageButton
+                    android:id="@+id/buttonModo"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/buttonModo"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@drawable/modo_seeklogo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iconsBoxSecondRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonPaypal"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/buttonPaypal"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@drawable/imagen_paypal" />
+
+                <ImageButton
+                    android:id="@+id/buttonTransferencia"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/buttonTransferencia"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@drawable/imagen_banco" />
+
+            </LinearLayout>
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
