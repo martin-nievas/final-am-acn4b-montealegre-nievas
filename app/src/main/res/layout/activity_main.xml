@@ -20,14 +20,16 @@
             android:id="@+id/buttonMercadoPago"
             android:layout_width="140dp"
             android:layout_height="140dp"
+            android:background="?android:attr/selectableItemBackground"
             android:contentDescription="@string/buttonmercadopago"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.185"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.628"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/mp_rgb_handshake_color_vertical" />
 
         <TextView
             android:id="@+id/text_donaciones"
@@ -44,14 +46,16 @@
             android:id="@+id/buttonModo"
             android:layout_width="140dp"
             android:layout_height="140dp"
+            android:background="?android:attr/selectableItemBackground"
             android:contentDescription="@string/buttonModo"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.807"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.628"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/modo_seeklogo" />
 
         <ImageButton
             android:id="@+id/buttonPaypal"
@@ -66,7 +70,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.893"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/imagen_paypal"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"/>
 
         <ImageButton
             android:id="@+id/buttonTransferencia"
@@ -80,7 +86,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.892"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/imagen_banco"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"/>
 
         <EditText
             android:id="@+id/editTextText"
