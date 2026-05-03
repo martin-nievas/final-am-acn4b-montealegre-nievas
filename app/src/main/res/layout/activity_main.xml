@@ -16,6 +16,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/editTextText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingBottom="20dp"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:ems="10"
+            android:hint="@string/textoExplicativo"
+            android:inputType="textMultiLine"
+            android:textSize="18sp"
+            android:lineSpacingExtra="7dp"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.236" />
+
         <ImageButton
             android:id="@+id/buttonMercadoPago"
             android:layout_width="140dp"
@@ -82,21 +105,6 @@
             app:layout_constraintVertical_bias="0.892"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="306dp"
-            android:layout_height="178dp"
-            android:ems="10"
-            android:hint="@string/textoExplicativo"
-            android:inputType="text"
-            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam"
-            app:autoSizeTextType="uniform"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.48"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.236" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
