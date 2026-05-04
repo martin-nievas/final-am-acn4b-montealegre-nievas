@@ -36,7 +36,7 @@
         <LinearLayout
             android:id="@+id/TextsBox"
             android:layout_width="408dp"
-            android:layout_height="238dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,21 +50,27 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <EditText
+                <TextView
                     android:id="@+id/QuestionText"
                     android:layout_width="match_parent"
-                    android:layout_height="104dp"
-                    android:autofillHints="<@string/AutofillHintTextoExplicativo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingBottom="10dp"
                     android:ems="10"
                     android:hint="@string/pregunta"
-                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="7dp"
                     android:text="@string/questionText"
-                    app:autoSizeTextType="uniform" />
+                    app:autoSizeTextType="uniform"/>
 
                 <TextView
                     android:id="@+id/AnswerText"
                     android:layout_width="match_parent"
-                    android:layout_height="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingBottom="15dp"
                     android:text="@string/answerText"
                     android:visibility="gone" />
             </LinearLayout>
@@ -73,19 +79,32 @@
                 android:id="@+id/FAQ2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="visible">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/QuestionText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:hint="@string/pregunta"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/pregunta_seguridad"
+                    android:textSize="16sp"
+                    app:autoSizeTextType="uniform" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/AnswerText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/answer_seguridad"
+                    android:visibility="gone" />
             </LinearLayout>
 
         </LinearLayout>

@@ -1,6 +1,8 @@
 package com.example.parcial_1_am_acn4b_montealegre_nievas;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +22,34 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView pregunta1 = findViewById(R.id.QuestionText);
+        TextView respuesta1 = findViewById(R.id.AnswerText);
+
+        pregunta1.setOnClickListener(v -> {
+            if (respuesta1.getVisibility() == View.GONE){
+                respuesta1.setVisibility(View.VISIBLE);
+        } else {
+            respuesta1.setVisibility(View.GONE);
+
+            }
+        }
+        );
+
+        TextView pregunta2 = findViewById(R.id.QuestionText2);
+        TextView respuesta2 = findViewById(R.id.AnswerText2);
+
+        pregunta2.setOnClickListener(v -> {
+            if (respuesta2.getVisibility() == View.GONE){
+                respuesta2.setVisibility(View.VISIBLE);
+            } else {
+                respuesta2.setVisibility(View.GONE);
+
+            }
+        }
+
+        );
+
     }
 
 }

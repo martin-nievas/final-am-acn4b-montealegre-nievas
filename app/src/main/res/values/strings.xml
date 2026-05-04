@@ -11,4 +11,6 @@
     <string name="answerText">Podés donar a través de transferencia bancaria, Mercado Pago, PayPal o tarjeta de crédito/débito utilizando los botones de la página</string>
     <string name="AutofillHintTextoExplicativo">AutofillHint Texto Explicativo</string>
     <string name="questionText">¿Cómo puedo realizar una donación?</string>
+    <string name="pregunta_seguridad">¿Es seguro el proceso de pago?</string>
+    <string name="answer_seguridad">Totalmente. No almacenamos los datos de tus tarjetas. Todas las transacciones se procesan a través de plataformas líderes que cuentan conn los más altos estándares de seguridad y cifrado</string>
 </resources>
