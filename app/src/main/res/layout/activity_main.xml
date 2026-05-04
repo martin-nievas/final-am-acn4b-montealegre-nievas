@@ -111,7 +111,7 @@
 
         <LinearLayout
             android:id="@+id/iconsBox"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:orientation="vertical"
@@ -130,23 +130,23 @@
 
                 <ImageButton
                     android:id="@+id/buttonMercadoPago"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_weight="1"
                     android:background="?android:attr/selectableItemBackground"
                     android:contentDescription="@string/buttonmercadopago"
                     android:scaleType="fitCenter"
-                    tools:srcCompat="@drawable/mp_rgb_handshake_color_vertical" />
+                    app:srcCompat="@drawable/mp_rgb_handshake_color_vertical" />
 
                 <ImageButton
                     android:id="@+id/buttonModo"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_weight="1"
                     android:background="?android:attr/selectableItemBackground"
                     android:contentDescription="@string/buttonModo"
                     android:scaleType="fitCenter"
-                    tools:srcCompat="@drawable/modo_seeklogo" />
+                    app:srcCompat="@drawable/modo_seeklogo" />
             </LinearLayout>
 
             <LinearLayout
@@ -157,23 +157,23 @@
 
                 <ImageButton
                     android:id="@+id/buttonPaypal"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_weight="1"
                     android:background="?android:attr/selectableItemBackground"
                     android:contentDescription="@string/buttonPaypal"
                     android:scaleType="fitCenter"
-                    tools:srcCompat="@drawable/imagen_paypal" />
+                    app:srcCompat="@drawable/imagen_paypal" />
 
                 <ImageButton
                     android:id="@+id/buttonTransferencia"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_weight="1"
                     android:background="?android:attr/selectableItemBackground"
                     android:contentDescription="@string/buttonTransferencia"
                     android:scaleType="fitCenter"
-                    tools:srcCompat="@drawable/imagen_banco" />
+                    app:srcCompat="@drawable/imagen_banco" />
 
             </LinearLayout>
         </LinearLayout>

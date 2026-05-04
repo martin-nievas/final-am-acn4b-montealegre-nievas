@@ -1,7 +1,10 @@
 package com.example.parcial_1_am_acn4b_montealegre_nievas;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -49,6 +52,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         );
+
+        LinearLayout contenedorPagos = findViewById(R.id.iconsBox);
+        TextView tituloPagos = new TextView(this);
+
+        tituloPagos.setText("Medios de pago Disponibles");
+        tituloPagos.setTextSize(18);
+        tituloPagos.setTypeface(null, Typeface.BOLD);
+        tituloPagos.setTextColor(Color.BLACK);
+        tituloPagos.setPadding(0, 30, 0, 20);
+
+        contenedorPagos.addView(tituloPagos, 0);
 
     }
 
