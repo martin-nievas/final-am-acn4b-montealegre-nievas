@@ -13,4 +13,5 @@
     <string name="questionText">¿Cómo puedo realizar una donación?</string>
     <string name="pregunta_seguridad">¿Es seguro el proceso de pago?</string>
     <string name="answer_seguridad">Totalmente. No almacenamos los datos de tus tarjetas. Todas las transacciones se procesan a través de plataformas líderes que cuentan conn los más altos estándares de seguridad y cifrado</string>
+    <string name="titulo_medios_de_pago_disponibles">Medios de pago Disponibles</string>
 </resources>

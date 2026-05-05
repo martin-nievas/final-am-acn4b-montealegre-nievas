@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout contenedorPagos = findViewById(R.id.iconsBox);
         TextView tituloPagos = new TextView(this);
 
-        tituloPagos.setText("Medios de pago Disponibles");
+        tituloPagos.setText(R.string.titulo_medios_de_pago_disponibles);
         tituloPagos.setTextSize(18);
         tituloPagos.setTypeface(null, Typeface.BOLD);
         tituloPagos.setTextColor(Color.BLACK);
