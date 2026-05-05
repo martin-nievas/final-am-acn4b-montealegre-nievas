@@ -15,7 +15,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/perritos"
+            android:layout_width="408dp"
+            android:layout_height="291dp"
+            android:contentDescription="@string/imagenes_de_perritos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.564"
+            app:srcCompat="@drawable/perritos" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="78dp"
+            android:layout_height="123dp"
+            android:contentDescription="@string/logo_del_refugio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/text_donaciones"
@@ -37,7 +63,9 @@
             android:id="@+id/TextsBox"
             android:layout_width="408dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical"
+            android:padding="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,6 +76,7 @@
                 android:id="@+id/FAQ1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -56,13 +85,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:paddingBottom="10dp"
                     android:ems="10"
                     android:hint="@string/pregunta"
-                    android:textSize="16sp"
                     android:lineSpacingExtra="7dp"
+                    android:paddingBottom="10dp"
                     android:text="@string/questionText"
-                    app:autoSizeTextType="uniform"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
 
                 <TextView
                     android:id="@+id/AnswerText"
@@ -73,12 +105,14 @@
                     android:paddingBottom="15dp"
                     android:text="@string/answerText"
                     android:visibility="gone" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/FAQ2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
                 android:orientation="vertical"
                 android:visibility="visible">
 
@@ -93,7 +127,9 @@
                     android:lineSpacingExtra="7dp"
                     android:paddingBottom="10dp"
                     android:text="@string/pregunta_seguridad"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textSize="16sp"
+                    android:textStyle="bold"
                     app:autoSizeTextType="uniform" />
 
                 <TextView
