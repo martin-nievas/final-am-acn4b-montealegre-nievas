@@ -1,9 +1,12 @@
 package com.example.parcial_1_am_acn4b_montealegre_nievas;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -63,6 +66,59 @@ public class MainActivity extends AppCompatActivity {
         tituloPagos.setPadding(0, 30, 0, 20);
 
         contenedorPagos.addView(tituloPagos, 0);
+
+
+
+        ImageButton btnMP = findViewById(R.id.buttonMercadoPago);
+
+        btnMP.setOnClickListener(v -> {
+            String url = "https://www.mercadopago.com.ar/";
+
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        }
+
+        );
+
+
+        ImageButton btnModo = findViewById(R.id.buttonModo);
+
+        btnModo.setOnClickListener(v -> {
+                    String url = "https://www.modo.com.ar/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                }
+
+        );
+
+
+        ImageButton btnPP = findViewById(R.id.buttonPaypal);
+
+        btnPP.setOnClickListener(v -> {
+                    String url = "https://www.paypal.com/ar/";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                }
+
+        );
+
+        ImageButton btnTef = findViewById(R.id.buttonTransferencia);
+
+        btnTef.setOnClickListener(v -> {
+                    String url = "https://www.google.com/search?q=home+banking+argentina";
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                }
+
+        );
+
 
     }
 
