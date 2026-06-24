@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="appBackgroundColour">#F0D2AB</color>
     <color name="DonacionesTitleColour">#3E2F2F</color>
+    <color name="button_color">#E9B941</color>
 </resources>
