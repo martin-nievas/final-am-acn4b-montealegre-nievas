@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/transparent">
 
-    <!-- Clic fuera para cerrar (opcional, pero ayuda a la sensación de overlay) -->
+    <!-- Clic fuera para cerrar -->
     <View
         android:id="@+id/view_dismiss"
         android:layout_width="0dp"
@@ -45,8 +45,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Opción 1 -->
+                <!-- Opción 1: Inicio -->
                 <LinearLayout
+                    android:id="@+id/btn_nav_inicio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
@@ -56,17 +57,18 @@
                     android:paddingVertical="16dp">
 
                     <TextView
-                        android:id="@+id/opcion_Donaciones"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/opcion_Donaciones"
+                        android:text="@string/opcion_Inicio"
                         android:textColor="@color/black"
-                        android:textSize="32sp" />
+                        android:textSize="32sp"
+                        android:clickable="false"
+                        android:focusable="false" />
                 </LinearLayout>
 
-                <!-- Opción 2 -->
+                <!-- Opción 2: Adopciones -->
                 <LinearLayout
+                    android:id="@+id/btn_nav_adopciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
@@ -76,17 +78,18 @@
                     android:paddingVertical="16dp">
 
                     <TextView
-                        android:id="@+id/opcion_Adopciones"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="@string/opcion_Adopciones"
                         android:textColor="@color/black"
-                        android:textSize="32sp" />
+                        android:textSize="32sp"
+                        android:clickable="false"
+                        android:focusable="false" />
                 </LinearLayout>
 
-                <!-- Opción 3 -->
+                <!-- Opción 3: Donaciones -->
                 <LinearLayout
+                    android:id="@+id/btn_nav_donaciones"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
@@ -96,24 +99,17 @@
                     android:paddingVertical="16dp">
 
                     <TextView
-                        android:id="@+id/opcion_3"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/opcion_3"
+                        android:text="@string/opcion_Donaciones"
                         android:textColor="@color/black"
-                        android:textSize="32sp" />
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="center_vertical"
-                        android:contentDescription="@null"
-                        android:src="@drawable/ic_chevron_down" />
+                        android:textSize="32sp"
+                        android:clickable="false"
+                        android:focusable="false" />
                 </LinearLayout>
 
                 <!-- Opción 4 -->
                 <LinearLayout
-                    android:id="@+id/option_4_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -129,20 +125,23 @@
                         android:paddingVertical="16dp">
 
                         <TextView
-                            android:id="@+id/opcion_4"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/opcion_4"
                             android:textColor="@color/black"
-                            android:textSize="32sp" />
+                            android:textSize="32sp"
+                            android:clickable="false"
+                            android:focusable="false" />
                         <ImageView
                             android:id="@+id/option_4_chevron"
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_gravity="center_vertical"
                             android:contentDescription="@null"
-                            android:src="@drawable/ic_chevron_down" />
+                            android:src="@drawable/ic_chevron_down"
+                            android:clickable="false"
+                            android:focusable="false" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -223,9 +222,6 @@
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_linkedin"
                 android:contentDescription="@string/linkedin" />
-
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

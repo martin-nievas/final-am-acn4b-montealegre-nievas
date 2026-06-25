@@ -2,12 +2,14 @@ package com.example.parcial_1_am_acn4b_montealegre_nievas;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MenuHelper {
 
@@ -20,38 +22,71 @@ public class MenuHelper {
             window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }
 
-        ImageView btnClose = dialog.findViewById(R.id.btn_close_menu);
-        btnClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
+        // Botón Cerrar (X)
+        View btnClose = dialog.findViewById(R.id.btn_close_menu);
+        if (btnClose != null) {
+            btnClose.setOnClickListener(v -> dialog.dismiss());
+        }
 
+        // Cerrar al tocar área oscura (Overlay lateral)
         View viewDismiss = dialog.findViewById(R.id.view_dismiss);
-        viewDismiss.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
+        if (viewDismiss != null) {
+            viewDismiss.setOnClickListener(v -> dialog.dismiss());
+        }
 
-        LinearLayout option4Header = dialog.findViewById(R.id.option_4_header);
+        // Opción 1: Inicio (LandingPageActivity)
+        View btnInicio = dialog.findViewById(R.id.btn_nav_inicio);
+        if (btnInicio != null) {
+            btnInicio.setOnClickListener(v -> {
+                dialog.dismiss();
+                if (!(activity instanceof LandingPageActivity)) {
+                    Intent intent = new Intent(activity, LandingPageActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    activity.startActivity(intent);
+                }
+            });
+        }
+
+        // Opción 2: Adopciones (Próxima actividad)
+        View btnAdopciones = dialog.findViewById(R.id.btn_nav_adopciones);
+        if (btnAdopciones != null) {
+            btnAdopciones.setOnClickListener(v -> {
+                dialog.dismiss();
+                Toast.makeText(activity, "Sección de Adopciones próximamente", Toast.LENGTH_SHORT).show();
+                // TODO: Redirigir cuando se cree AdopcionesActivity
+                // activity.startActivity(new Intent(activity, AdopcionesActivity.class));
+            });
+        }
+
+        // Opción 3: Donaciones (MainActivity)
+        View btnDonaciones = dialog.findViewById(R.id.btn_nav_donaciones);
+        if (btnDonaciones != null) {
+            btnDonaciones.setOnClickListener(v -> {
+                dialog.dismiss();
+                if (!(activity instanceof MainActivity)) {
+                    Intent intent = new Intent(activity, MainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    activity.startActivity(intent);
+                }
+            });
+        }
+
+        // Opción 4: Lógica de subopciones expansibles
+        View option4Header = dialog.findViewById(R.id.option_4_header);
         LinearLayout suboptionsContainer = dialog.findViewById(R.id.suboptions_container);
         ImageView option4Chevron = dialog.findViewById(R.id.option_4_chevron);
 
-        option4Header.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        if (option4Header != null && suboptionsContainer != null) {
+            option4Header.setOnClickListener(v -> {
                 if (suboptionsContainer.getVisibility() == View.GONE) {
                     suboptionsContainer.setVisibility(View.VISIBLE);
-                    option4Chevron.setRotation(180f);
+                    if (option4Chevron != null) option4Chevron.setRotation(180f);
                 } else {
                     suboptionsContainer.setVisibility(View.GONE);
-                    option4Chevron.setRotation(0f);
+                    if (option4Chevron != null) option4Chevron.setRotation(0f);
                 }
-            }
-        });
+            });
+        }
 
         dialog.show();
     }
