@@ -54,11 +54,13 @@
                     android:focusable="true"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
+
                     <TextView
+                        android:id="@+id/opcion_Donaciones"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/menu_opcion_1"
+                        android:text="@string/opcion_Donaciones"
                         android:textColor="@color/black"
                         android:textSize="32sp" />
                 </LinearLayout>
@@ -72,11 +74,13 @@
                     android:focusable="true"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
+
                     <TextView
+                        android:id="@+id/opcion_Adopciones"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/menu_opcion_2"
+                        android:text="@string/opcion_Adopciones"
                         android:textColor="@color/black"
                         android:textSize="32sp" />
                 </LinearLayout>
@@ -90,11 +94,13 @@
                     android:focusable="true"
                     android:orientation="horizontal"
                     android:paddingVertical="16dp">
+
                     <TextView
+                        android:id="@+id/opcion_3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/menu_opcion_3"
+                        android:text="@string/opcion_3"
                         android:textColor="@color/black"
                         android:textSize="32sp" />
                     <ImageView
@@ -121,11 +127,13 @@
                         android:focusable="true"
                         android:orientation="horizontal"
                         android:paddingVertical="16dp">
+
                         <TextView
+                            android:id="@+id/opcion_4"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="@string/menu_opcion_4"
+                            android:text="@string/opcion_4"
                             android:textColor="@color/black"
                             android:textSize="32sp" />
                         <ImageView
