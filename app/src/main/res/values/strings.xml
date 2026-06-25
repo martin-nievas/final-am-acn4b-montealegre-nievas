@@ -39,4 +39,9 @@
     <string name="desc_instagram">Instagram</string>
     <string name="desc_youtube">YouTube</string>
     <string name="desc_linkedin">LinkedIn</string>
+    <string name="facebook">Facebook</string>
+    <string name="x_Twitter">X</string>
+    <string name="instagram">Instagram</string>
+    <string name="youtube">YouTube</string>
+    <string name="linkedin">LinkedIn</string>
 </resources>

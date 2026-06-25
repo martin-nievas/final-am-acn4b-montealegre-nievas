@@ -198,35 +198,35 @@
                 android:layout_height="32dp"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_facebook"
-                android:contentDescription="Facebook" />
+                android:contentDescription="@string/facebook" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_twitter_x"
-                android:contentDescription="X" />
+                android:contentDescription="@string/x_Twitter" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_instagram"
-                android:contentDescription="Instagram" />
+                android:contentDescription="@string/instagram" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_youtube"
-                android:contentDescription="YouTube" />
+                android:contentDescription="@string/youtube" />
 
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginHorizontal="8dp"
                 android:src="@drawable/ic_linkedin"
-                android:contentDescription="LinkedIn" />
+                android:contentDescription="@string/linkedin" />
 
         </LinearLayout>
 
