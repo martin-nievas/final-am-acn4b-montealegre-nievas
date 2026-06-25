@@ -32,4 +32,11 @@
     <string name="menu_subopcion_2">Subopción 2</string>
     <string name="menu_subopcion_3">Subopción 3</string>
     <string name="cerrar_menu">Cerrar menú</string>
+
+    <!-- Social Strings -->
+    <string name="desc_facebook">Facebook</string>
+    <string name="desc_twitter_x">X</string>
+    <string name="desc_instagram">Instagram</string>
+    <string name="desc_youtube">YouTube</string>
+    <string name="desc_linkedin">LinkedIn</string>
 </resources>

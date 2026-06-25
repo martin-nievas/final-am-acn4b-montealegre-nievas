@@ -1,9 +1,11 @@
 package com.example.parcial_1_am_acn4b_montealegre_nievas;
 
 import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,8 +29,24 @@ public class LandingPageActivity extends AppCompatActivity {
         Dialog dialog = new Dialog(this, android.R.style.Theme_NoTitleBar_Fullscreen);
         dialog.setContentView(R.layout.layout_menu_desplegable);
 
+        // Hacer que el fondo del Dialog sea transparente para ver la Activity detrás
+        Window window = dialog.getWindow();
+        if (window != null) {
+            window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        }
+
+        // Cerrar al hacer clic en la X
         ImageView btnClose = dialog.findViewById(R.id.btn_close_menu);
         btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        // Cerrar al hacer clic fuera del contenido del menú
+        View viewDismiss = dialog.findViewById(R.id.view_dismiss);
+        viewDismiss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
