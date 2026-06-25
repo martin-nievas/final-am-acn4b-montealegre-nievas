@@ -24,8 +24,8 @@
     <string name="landing_page_imagen_fondo_perro">Landing Page imagen fondo perro</string>
 
     <!-- Menu Strings -->
-    <string name="menu_opcion_1">Opción 1</string>
-    <string name="menu_opcion_2">Opción 2</string>
+    <string name="menu_opcion_1">Donaciones</string>
+    <string name="menu_opcion_2">Adopciones</string>
     <string name="menu_opcion_3">Opción 3</string>
     <string name="menu_opcion_4">Opción 4</string>
     <string name="menu_subopcion_1">Subopción 1</string>

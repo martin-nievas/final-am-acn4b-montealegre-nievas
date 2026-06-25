@@ -61,12 +61,6 @@
                         android:text="@string/menu_opcion_1"
                         android:textColor="@color/black"
                         android:textSize="32sp" />
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="center_vertical"
-                        android:contentDescription="@null"
-                        android:src="@drawable/ic_chevron_down" />
                 </LinearLayout>
 
                 <!-- Opción 2 -->
@@ -85,12 +79,6 @@
                         android:text="@string/menu_opcion_2"
                         android:textColor="@color/black"
                         android:textSize="32sp" />
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_gravity="center_vertical"
-                        android:contentDescription="@null"
-                        android:src="@drawable/ic_chevron_down" />
                 </LinearLayout>
 
                 <!-- Opción 3 -->
