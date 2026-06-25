@@ -47,23 +47,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:shadowColor="#040404"
-        android:text="@string/refugio_title"
-        android:textColor="@color/black"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
-        app:layout_constraintStart_toStartOf="@+id/iv_dog"
-        app:layout_constraintTop_toTopOf="@+id/iv_dog" />
-
     <ImageView
         android:id="@+id/iv_dog"
         android:layout_width="wrap_content"
@@ -71,12 +54,13 @@
         android:contentDescription="@string/landing_page_imagen_fondo_perro"
         android:scaleType="centerInside"
         android:src="@drawable/perrito"
+        android:tintMode="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/header"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.568"
+        app:tint="#6E2A2A2A" />
 
     <TextView
         android:id="@+id/tv_description"
@@ -91,22 +75,38 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/iv_dog"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
-        app:layout_constraintVertical_bias="0.547" />
+        app:layout_constraintVertical_bias="0.501" />
 
     <Button
         android:id="@+id/btn_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="24dp"
         android:backgroundTint="@color/button_color"
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
         android:text="@string/btn_convertite_hogar"
         android:textAllCaps="false"
         android:textColor="@color/black"
+        app:iconTint="#020202"
         app:layout_constraintBottom_toBottomOf="@+id/iv_dog"
         app:layout_constraintEnd_toEndOf="@+id/iv_dog"
-        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/refugio_title"
+        android:textColor="@color/black"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/iv_dog"
+        app:layout_constraintTop_toTopOf="@+id/iv_dog" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
