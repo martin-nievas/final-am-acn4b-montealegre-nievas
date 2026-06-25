@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 public class MenuHelper {
 
@@ -47,14 +46,16 @@ public class MenuHelper {
             });
         }
 
-        // Opción 2: Adopciones (Próxima actividad)
+        // Opción 2: Adopciones
         View btnAdopciones = dialog.findViewById(R.id.btn_nav_adopciones);
         if (btnAdopciones != null) {
             btnAdopciones.setOnClickListener(v -> {
                 dialog.dismiss();
-                Toast.makeText(activity, "Sección de Adopciones próximamente", Toast.LENGTH_SHORT).show();
-                // TODO: Redirigir cuando se cree AdopcionesActivity
-                // activity.startActivity(new Intent(activity, AdopcionesActivity.class));
+                if (!(activity instanceof AdopcionesActivity)) {
+                    Intent intent = new Intent(activity, AdopcionesActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    activity.startActivity(intent);
+                }
             });
         }
 
