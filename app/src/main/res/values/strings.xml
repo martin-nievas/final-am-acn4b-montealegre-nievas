@@ -54,4 +54,10 @@
     <string name="nombre_perro_2">Bianca</string>
     <string name="imagen_perro_numero_dos">imagen perro numero dos</string>
     <string name="imagen_perro_numero_uno">imagen perro numero uno</string>
+
+    <!-- Detalle Perro Strings -->
+    <string name="title_dame_un_hogar">Dame un Hogar!</string>
+    <string name="conoce_a">Conocé a %1$s</string>
+    <string name="icono_info">Icono de información</string>
+    <string name="icono_desplegar">Icono desplegable</string>
 </resources>

@@ -25,6 +25,9 @@
         <activity
             android:name=".AdopcionesActivity"
             android:exported="false" />
+        <activity
+            android:name=".PerroDetalleActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
