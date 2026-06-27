@@ -49,4 +49,9 @@
     <string name="title_adopciones">Perros en Adopción</string>
     <string name="search_hint">Value</string>
     <string name="filter_desc">Filtrar</string>
+    <string name="lupa_para_buscar">lupa para buscar</string>
+    <string name="nombre_perro_1">Pancho</string>
+    <string name="nombre_perro_2">Bianca</string>
+    <string name="imagen_perro_numero_dos">imagen perro numero dos</string>
+    <string name="imagen_perro_numero_uno">imagen perro numero uno</string>
 </resources>
