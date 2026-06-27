@@ -50,39 +50,40 @@
 
     <ImageView
         android:id="@+id/fondo_perro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="512dp"
+        android:layout_height="749dp"
         android:contentDescription="@string/landing_page_imagen_fondo_perro"
-        android:scaleType="centerInside"
+        android:scaleType="centerCrop"
         android:src="@drawable/perrito"
         android:tintMode="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/header"
-        app:layout_constraintVertical_bias="0.568"
+        app:layout_constraintVertical_bias="1.0"
         app:tint="#6E2A2A2A" />
 
     <TextView
         android:id="@+id/descripcion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="252dp"
+        android:layout_height="115dp"
         android:layout_marginEnd="180dp"
         android:text="@string/refugio_descripcion"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_action"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="@id/fondo_perro"
         app:layout_constraintTop_toBottomOf="@id/titulo"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <Button
         android:id="@+id/btn_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="116dp"
         android:backgroundTint="@color/button_color"
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
@@ -92,15 +93,15 @@
         app:iconTint="#020202"
         app:layout_constraintBottom_toBottomOf="@+id/fondo_perro"
         app:layout_constraintEnd_toEndOf="@+id/fondo_perro"
-        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
         android:text="@string/refugio_title"
         android:textColor="@color/black"
         android:textColorHighlight="#000000"
