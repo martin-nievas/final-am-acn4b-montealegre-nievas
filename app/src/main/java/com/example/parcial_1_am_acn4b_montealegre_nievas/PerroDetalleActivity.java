@@ -27,7 +27,8 @@ public class PerroDetalleActivity extends AppCompatActivity {
 
         // Setear datos
         if (nombrePerro != null) {
-            tvConoceA.setText(getString(R.string.conoce_a, nombrePerro));
+            // Volvemos a la concatenación directa como pediste
+            tvConoceA.setText("Conocé a " + nombrePerro);
         }
         if (imagenResId != 0) {
             ivPerro.setImageResource(imagenResId);

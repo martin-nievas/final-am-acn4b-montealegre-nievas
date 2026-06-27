@@ -18,23 +18,23 @@ public class AdopcionesActivity extends AppCompatActivity {
         }
 
         // Configurar click en Pancho
-        ImageView ivPancho = findViewById(R.id.iv_perro_1);
+        ImageView ivPancho = findViewById(R.id.iv_pancho_card);
         if (ivPancho != null) {
             ivPancho.setOnClickListener(v -> {
                 Intent intent = new Intent(this, PerroDetalleActivity.class);
                 intent.putExtra("NOMBRE_PERRO", "Pancho");
-                intent.putExtra("IMAGEN_PERRO", R.drawable.perrito);
+                intent.putExtra("IMAGEN_PERRO", R.drawable.perro_adopcion_1);
                 startActivity(intent);
             });
         }
 
         // Configurar click en Bianca
-        ImageView ivBianca = findViewById(R.id.iv_perro_2);
+        ImageView ivBianca = findViewById(R.id.iv_bianca_card);
         if (ivBianca != null) {
             ivBianca.setOnClickListener(v -> {
                 Intent intent = new Intent(this, PerroDetalleActivity.class);
                 intent.putExtra("NOMBRE_PERRO", "Bianca");
-                intent.putExtra("IMAGEN_PERRO", R.drawable.perritos);
+                intent.putExtra("IMAGEN_PERRO", R.drawable.perro_adopcion_2);
                 startActivity(intent);
             });
         }

@@ -47,18 +47,18 @@
 
     <!-- Adopciones Strings -->
     <string name="title_adopciones">Perros en Adopción</string>
-    <string name="search_hint">Nombre Perro</string>
-    <string name="filter_desc">Filtrar</string>
-    <string name="lupa_para_buscar">lupa para buscar</string>
-    <string name="nombre_perro_1">Pancho</string>
-    <string name="nombre_perro_2">Bianca</string>
-    <string name="imagen_perro_numero_dos">imagen perro numero dos</string>
-    <string name="imagen_perro_numero_uno">imagen perro numero uno</string>
+    <string name="search_hint">Buscar por nombre...</string>
+    <string name="filter_desc">Filtrar lista de perros</string>
+    <string name="lupa_para_buscar">Icono de búsqueda</string>
+    <string name="nombre_pancho">Pancho</string>
+    <string name="nombre_bianca">Bianca</string>
+    <string name="desc_imagen_pancho">Imagen de Pancho para adopción</string>
+    <string name="desc_imagen_bianca">Imagen de Bianca para adopción</string>
 
     <!-- Detalle Perro Strings -->
     <string name="title_dame_un_hogar">Dame un Hogar!</string>
     <string name="conoce_a">Conocé a %1$s</string>
-    <string name="icono_info">Icono de información</string>
-    <string name="icono_desplegar">Icono desplegable</string>
-    <string name="imagen_perro">imagen perro</string>
+    <string name="icono_info">Icono de información detallada</string>
+    <string name="icono_desplegar">Icono para ver más detalles</string>
+    <string name="imagen_perro_detalle_desc">Imagen detallada del perro</string>
 </resources>
