@@ -47,7 +47,7 @@
 
     <!-- Adopciones Strings -->
     <string name="title_adopciones">Perros en Adopción</string>
-    <string name="search_hint">Value</string>
+    <string name="search_hint">Nombre Perro</string>
     <string name="filter_desc">Filtrar</string>
     <string name="lupa_para_buscar">lupa para buscar</string>
     <string name="nombre_perro_1">Pancho</string>

@@ -50,6 +50,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Search and Filter Bar -->
+
+    <!-- Content List -->
+
     <LinearLayout
         android:id="@+id/search_bar_container"
         android:layout_width="match_parent"
@@ -59,12 +62,13 @@
         android:paddingHorizontal="24dp"
         android:paddingVertical="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_adopciones">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="66dp"
             android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:backgroundTint="@color/white"
@@ -73,13 +77,13 @@
             android:paddingHorizontal="16dp">
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_weight="1"
+                android:layout_width="249dp"
+                android:layout_height="66dp"
                 android:background="@null"
                 android:hint="@string/search_hint"
                 android:inputType="text"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:autofillHints="@string/search_hint"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -97,7 +101,6 @@
             android:src="@drawable/ic_filter_list" />
     </LinearLayout>
 
-    <!-- Content List -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
