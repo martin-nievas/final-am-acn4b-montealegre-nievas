@@ -47,7 +47,7 @@
 
     <!-- Adopciones Strings -->
     <string name="title_adopciones">Perros en Adopción</string>
-    <string name="search_hint">Buscar por nombre...</string>
+    <string name="search_hint">Buscar por nombre…</string>
     <string name="filter_desc">Filtrar lista de perros</string>
     <string name="lupa_para_buscar">Icono de búsqueda</string>
     <string name="nombre_pancho">Pancho</string>
@@ -67,4 +67,9 @@
     <string name="se_lleva_bien_chicos">Se lleva bien\ncon chicos</string>
     <string name="se_lleva_bien_perros">Se lleva bien\notros perros</string>
     <string name="icono_estrella">Icono estrella</string>
+    <string name="titular_refugio_de_patas">Titular: Refugio de Patas</string>
+    <string name="cbu_0110000000000000000000">CBU: 0110000000000000000000</string>
+    <string name="volver">Volver</string>
+    <string name="banco_banco_nacion">Banco: Banco Nación</string>
+    <string name="datos_para_transferencia">Datos para Transferencia</string>
 </resources>

@@ -99,11 +99,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ImageButton btnTef = findViewById(R.id.buttonTransferencia);
-        btnTef.setOnClickListener(v -> {
-            String url = "https://www.google.com/search?q=home+banking+argentina";
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
-        });
+        if (btnTef != null) {
+            btnTef.setOnClickListener(v -> {
+                Intent intent = new Intent(MainActivity.this, DatosBancoActivity.class);
+                startActivity(intent);
+            });
+        }
     }
 }
