@@ -72,4 +72,5 @@
     <string name="volver">Volver</string>
     <string name="banco_banco_nacion">Banco: Banco Nación</string>
     <string name="datos_para_transferencia">Datos para Transferencia</string>
+    <string name="conoce_a_mascota">"Conocé a "</string>
 </resources>

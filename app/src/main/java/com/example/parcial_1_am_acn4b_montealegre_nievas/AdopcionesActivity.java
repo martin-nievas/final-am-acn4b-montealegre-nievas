@@ -22,24 +22,32 @@ public class AdopcionesActivity extends AppCompatActivity {
             menuIcon.setOnClickListener(v -> MenuHelper.showMenuDialog(this));
         }
 
-        // Configurar click en Pancho
+        String urlPancho = "https://images.unsplash.com/photo-1761583779782-668295ac8368?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYxfHxqdW1waW5nJTIwZG9nfGVufDB8fDB8fHww";
+        String urlBianca = "https://plus.unsplash.com/premium_photo-1708983591032-40822c6afa84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzYzfHxqdW1waW5nJTIwZG9nfGVufDB8fDB8fHww";
+
         ImageView ivPancho = findViewById(R.id.iv_pancho_card);
+        ImageView ivBianca = findViewById(R.id.iv_bianca_card);
+
+        // Configurar click en Pancho
         if (ivPancho != null) {
+            com.bumptech.glide.Glide.with(this).load(urlPancho).into(ivPancho);
+
             ivPancho.setOnClickListener(v -> {
                 Intent intent = new Intent(this, PerroDetalleActivity.class);
                 intent.putExtra("NOMBRE_PERRO", "Pancho");
-                intent.putExtra("IMAGEN_PERRO", R.drawable.perro_adopcion_1);
+                intent.putExtra("URL_IMAGEN_PERRO", urlPancho);
                 startActivity(intent);
             });
         }
 
         // Configurar click en Bianca
-        ImageView ivBianca = findViewById(R.id.iv_bianca_card);
         if (ivBianca != null) {
+            com.bumptech.glide.Glide.with(this).load(urlBianca).into(ivBianca);
+
             ivBianca.setOnClickListener(v -> {
                 Intent intent = new Intent(this, PerroDetalleActivity.class);
                 intent.putExtra("NOMBRE_PERRO", "Bianca");
-                intent.putExtra("IMAGEN_PERRO", R.drawable.perro_adopcion_2);
+                intent.putExtra("URL_IMAGEN_PERRO", urlBianca);
                 startActivity(intent);
             });
         }

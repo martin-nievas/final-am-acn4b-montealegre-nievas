@@ -1,5 +1,6 @@
 package com.example.parcial_1_am_acn4b_montealegre_nievas;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.transition.TransitionManager;
 import android.view.View;
@@ -8,8 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import com.bumptech.glide.Glide;
 
 public class PerroDetalleActivity extends AppCompatActivity {
+    @SuppressLint("StringFormatInvalid")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +26,7 @@ public class PerroDetalleActivity extends AppCompatActivity {
 
         // Obtener datos del Intent
         String nombrePerro = getIntent().getStringExtra("NOMBRE_PERRO");
-        int imagenResId = getIntent().getIntExtra("IMAGEN_PERRO", 0);
+        String urlImagenPerro = getIntent().getStringExtra("URL_IMAGEN_PERRO");
 
         // Referencias a las vistas
         ImageView ivPerro = findViewById(R.id.iv_dog_detail);
@@ -38,7 +41,7 @@ public class PerroDetalleActivity extends AppCompatActivity {
 
         // Setear datos básicos
         if (nombrePerro != null) {
-            tvConoceA.setText("Conocé a " + nombrePerro);
+            tvConoceA.setText(getString(R.string.conoce_a_mascota, nombrePerro));
             tvNameDetail.setText(nombrePerro);
             
             if (nombrePerro.equalsIgnoreCase("Pancho")) {
@@ -47,11 +50,12 @@ public class PerroDetalleActivity extends AppCompatActivity {
                 tvDescription.setText(R.string.descripcion_bianca);
             }
         }
-        
-        if (imagenResId != 0) {
-            ivPerro.setImageResource(imagenResId);
-        }
 
+        if (ivPerro != null && urlImagenPerro != null) {
+            Glide.with(this)
+                    .load(urlImagenPerro)
+                    .into(ivPerro);
+        }
 
 
         //TransitionManager sirve para que el cambio sea suave
