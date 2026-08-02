@@ -1,17 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
-    // Add the Google services Gradle plugin
     id 'com.google.gms.google-services'
 }
 
 android {
     namespace 'com.example.parcial_1_am_acn4b_montealegre_nievas'
-    compileSdk 36
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.example.parcial_1_am_acn4b_montealegre_nievas"
         minSdk 24
-        targetSdk 36
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -41,14 +40,12 @@ dependencies {
     androidTestImplementation libs.espresso.core
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    // Import the Firebase BoM
-    implementation platform('com.google.firebase:firebase-bom:34.17.0')
+    // Firebase
+    implementation libs.firebase.bom
+    implementation libs.firebase.auth
+    implementation libs.firebase.ui.auth
 
-    // Importa la BoM de Firebase para sincronizar versiones de sus librerías
-    implementation 'com.google.firebase:firebase-auth'
-
-    // Requerido para la autenticación moderna de Google en Android
-    implementation 'androidx.credentials:credentials:1.6.0'
-    implementation 'androidx.credentials:credentials-play-services-auth:1.6.0'
-    implementation 'com.google.android.libraries.identity.googleid:googleid:1.2.0'
+    implementation libs.credentials
+    implementation libs.credentials.play.services.auth
+    implementation libs.googleid
 }
