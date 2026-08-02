@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "150347945572",
+    "project_id": "refugiodepatas",
+    "storage_bucket": "refugiodepatas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150347945572:android:fd9de463d8c438dc737171",
+        "android_client_info": {
+          "package_name": "com.example.parcial_1_am_acn4b_montealegre_nievas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150347945572-5ina8nf667t29mr6t3ur9i213vjimte4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf6JIHAA45guXcO3TknOLqiBcO6VP9VWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150347945572-5ina8nf667t29mr6t3ur9i213vjimte4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
