@@ -27,6 +27,7 @@
     <string name="opcion_Inicio">Inicio</string>
     <string name="opcion_Adopciones">Adopciones</string>
     <string name="opcion_Donaciones">Donaciones</string>
+    <string name="opcion_Login">Iniciar Sesión</string>
     <string name="opcion_4">Opción 4</string>
     <string name="menu_subopcion_1">Subopción 1</string>
     <string name="menu_subopcion_2">Subopción 2</string>
@@ -64,8 +65,8 @@
     <string name="btn_adoptame">¡Adoptame!</string>
     <string name="descripcion_pancho">Soy macho y tengo 6 meses, de tamaño mediano y pelo negro y dorado. Mezclo dulzura, juego, mimos y amor.</string>
     <string name="descripcion_bianca">Soy hembra y tengo 1 año, de tamaño grande y pelo blanco y negro. Soy muy tranquila y compañera.</string>
-    <string name="se_lleva_bien_chicos">Se lleva bien\ncon chicos</string>
-    <string name="se_lleva_bien_perros">Se lleva bien\notros perros</string>
+    <string name="se_lleva_bien_chicos">Se lleva bien con chicos</string>
+    <string name="se_lleva_bien_perros">Se lleva bien con otros perros</string>
     <string name="icono_estrella">Icono estrella</string>
     <string name="titular_refugio_de_patas">Titular: Refugio de Patas</string>
     <string name="cbu_0110000000000000000000">CBU: 0110000000000000000000</string>
@@ -73,4 +74,11 @@
     <string name="banco_banco_nacion">Banco: Banco Nación</string>
     <string name="datos_para_transferencia">Datos para Transferencia</string>
     <string name="conoce_a_mascota">"Conocé a "</string>
+
+    <!-- Login Strings -->
+    <string name="login_title">¡Bienvenido!</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_button">Ingresar</string>
+    <string name="login_no_account">¿No tienes cuenta? Registrate</string>
 </resources>

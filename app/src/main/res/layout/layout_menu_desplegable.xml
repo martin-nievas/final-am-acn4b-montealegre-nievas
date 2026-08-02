@@ -108,6 +108,27 @@
                         android:focusable="false" />
                 </LinearLayout>
 
+                <!-- NUEVA Opción: Login -->
+                <LinearLayout
+                    android:id="@+id/btn_nav_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:paddingVertical="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opcion_Login"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:clickable="false"
+                        android:focusable="false" />
+                </LinearLayout>
+
                 <!-- Opción 4 -->
                 <LinearLayout
                     android:layout_width="match_parent"

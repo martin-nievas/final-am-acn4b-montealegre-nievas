@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MenuHelper {
 
@@ -66,6 +67,19 @@ public class MenuHelper {
                 dialog.dismiss();
                 if (!(activity instanceof MainActivity)) {
                     Intent intent = new Intent(activity, MainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    activity.startActivity(intent);
+                }
+            });
+        }
+
+        // Opción Login
+        View btnLogin = dialog.findViewById(R.id.btn_nav_login);
+        if (btnLogin != null) {
+            btnLogin.setOnClickListener(v -> {
+                dialog.dismiss();
+                if (!(activity instanceof LoginActivity)) {
+                    Intent intent = new Intent(activity, LoginActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                     activity.startActivity(intent);
                 }
