@@ -28,6 +28,7 @@
     <string name="opcion_Adopciones">Adopciones</string>
     <string name="opcion_Donaciones">Donaciones</string>
     <string name="opcion_Login">Iniciar Sesión</string>
+    <string name="opcion_Logout">Cerrar Sesión</string>
     <string name="opcion_4">Opción 4</string>
     <string name="menu_subopcion_1">Subopción 1</string>
     <string name="menu_subopcion_2">Subopción 2</string>

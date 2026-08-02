@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.firebase.ui.auth.AuthUI;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MenuHelper {
 
     public static void showMenuDialog(Activity activity) {
@@ -76,14 +79,42 @@ public class MenuHelper {
         // Opción Login
         View btnLogin = dialog.findViewById(R.id.btn_nav_login);
         if (btnLogin != null) {
-            btnLogin.setOnClickListener(v -> {
-                dialog.dismiss();
-                if (!(activity instanceof LoginActivity)) {
-                    Intent intent = new Intent(activity, LoginActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                    activity.startActivity(intent);
-                }
-            });
+            // Mostrar u ocultar según el estado de la sesión
+            if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+                btnLogin.setVisibility(View.GONE);
+            } else {
+                btnLogin.setVisibility(View.VISIBLE);
+                btnLogin.setOnClickListener(v -> {
+                    dialog.dismiss();
+                    if (!(activity instanceof LoginActivity)) {
+                        Intent intent = new Intent(activity, LoginActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        activity.startActivity(intent);
+                    }
+                });
+            }
+        }
+
+        // Opción Logout
+        View btnLogout = dialog.findViewById(R.id.btn_nav_logout);
+        if (btnLogout != null) {
+            // Mostrar u ocultar según el estado de la sesión
+            if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+                btnLogout.setVisibility(View.GONE);
+            } else {
+                btnLogout.setVisibility(View.VISIBLE);
+                btnLogout.setOnClickListener(v -> {
+                    dialog.dismiss();
+                    AuthUI.getInstance()
+                            .signOut(activity)
+                            .addOnCompleteListener(task -> {
+                                Toast.makeText(activity, "Sesión cerrada correctamente", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(activity, LoginActivity.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                activity.startActivity(intent);
+                            });
+                });
+            }
         }
 
         // Opción 4: Lógica de subopciones expansibles
