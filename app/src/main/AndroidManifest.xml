@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Parcial1amacn4bmontealegrenievas">
         <activity
+            android:name=".EstadoPostulacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormularioAdopcionActivity"
+            android:exported="false" />
+        <activity
             android:name=".LandingPageActivity"
             android:exported="true">
             <intent-filter>

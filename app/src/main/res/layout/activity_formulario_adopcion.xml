@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".FormularioAdopcionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMascotaSeleccionada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/est_s_postul_ndote_para_adoptar_a_nombre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/complet_tus_datos_y_desde_el_refugio_te_contactaremos_a_la_brevedad"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre_completo"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tel_fono_de_contacto"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_electr_nico"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/etComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/por_qu_te_gustar_a_adoptar_opcional"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:layout_marginBottom="20dp"
+            android:importantForAutofill="no"/>
+
+        <Button
+            android:id="@+id/btnEnviarSolicitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_solicitud"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/volver1" />
+
+    </LinearLayout>
+</ScrollView>

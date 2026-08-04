@@ -87,4 +87,15 @@
     <string name="login_welcome_message">Inicia sesión para continuar con tu adopción o donación</string>
     <string name="login_firebase_ui_button">Ingresar al Refugio</string>
     <string name="login_footer_message">Seguro, rápido y fácil con Firebase</string>
+
+    <!-- Formulario de Adopción -->
+    <string name="est_s_postul_ndote_para_adoptar_a_nombre">Estás postulándote para adoptar a: [Nombre]</string>
+    <string name="complet_tus_datos_y_desde_el_refugio_te_contactaremos_a_la_brevedad">Completá tus datos y desde el refugio te contactaremos a la brevedad.</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="tel_fono_de_contacto">Teléfono de contacto</string>
+    <string name="correo_electr_nico">Correo electrónico</string>
+    <string name="por_qu_te_gustar_a_adoptar_opcional">¿Por qué te gustaría adoptar? (Opcional)</string>
+    <string name="enviar_solicitud">Enviar Solicitud</string>
+    <string name="volver1">Volver</string>
+    <string name="est_s_postul_ndote_para_adoptar_a">Estás postulándote para adoptar a: %1$s</string>
 </resources>

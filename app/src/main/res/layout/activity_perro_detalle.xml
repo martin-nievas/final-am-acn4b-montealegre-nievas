@@ -167,7 +167,7 @@
                         tools:text="Soy macho y tengo 6 meses, de tamaño mediano y pelo negro y dorado..." />
 
                     <Button
-                        android:id="@+id/btn_adoptame_action"
+                        android:id="@+id/btn_adoptame"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
