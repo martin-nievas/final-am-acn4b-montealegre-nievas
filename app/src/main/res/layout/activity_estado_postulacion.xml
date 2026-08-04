@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/appBackgroundColour"
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center_vertical"
@@ -34,6 +36,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="16sp"
+        android:textColor="@color/black"
         android:lineSpacingExtra="4dp"
         android:layout_marginBottom="32dp" />
 
@@ -41,16 +44,24 @@
         android:id="@+id/btnVolverMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
         android:text="@string/volver2" />
 
     <Button
         android:id="@+id/btnCancelarPostulacion"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#D32F2F"
         android:text="@string/btn_cancelar_postulacion"
         android:textColor="@android:color/white"
-        android:backgroundTint="#D32F2F"
-        android:visibility="gone" />
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:cornerRadius="16dp"/>
 
 </LinearLayout>
