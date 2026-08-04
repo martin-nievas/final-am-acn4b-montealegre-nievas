@@ -63,6 +63,23 @@ public class MenuHelper {
             });
         }
 
+        View btnEstadoPostulacion = dialog.findViewById(R.id.btn_nav_estado_postulacion);
+        if (btnEstadoPostulacion != null) {
+            if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+                btnEstadoPostulacion.setVisibility(View.GONE);
+            } else {
+                btnEstadoPostulacion.setVisibility(View.VISIBLE);
+                btnEstadoPostulacion.setOnClickListener(v -> {
+                    dialog.dismiss();
+                    if (!(activity instanceof EstadoPostulacionActivity)) {
+                        Intent intent = new Intent(activity, EstadoPostulacionActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        activity.startActivity(intent);
+                    }
+                });
+            }
+        }
+
         // Opción 3: Donaciones (MainActivity)
         View btnDonaciones = dialog.findViewById(R.id.btn_nav_donaciones);
         if (btnDonaciones != null) {

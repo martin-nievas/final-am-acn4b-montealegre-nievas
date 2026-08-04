@@ -1,5 +1,6 @@
 package com.example.parcial_1_am_acn4b_montealegre_nievas;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +19,7 @@ public class FormularioAdopcionActivity extends AppCompatActivity {
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle("Formulario de Adopción");
+            getSupportActionBar().setTitle(R.string.formulario_de_adopci_n);
         }
 
         TextView tvMascota = findViewById(R.id.tvMascotaSeleccionada);
@@ -48,10 +49,17 @@ public class FormularioAdopcionActivity extends AppCompatActivity {
             String telefono = etTelefono.getText().toString().trim();
 
             if (nombre.isEmpty() || telefono.isEmpty()) {
-                Toast.makeText(this, "Por favor completá los campos obligatorios", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.por_favor_complet_los_campos_obligatorios, Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "¡Solicitud enviada! Nos contactaremos a la brevedad.", Toast.LENGTH_LONG).show();
-                finish(); // Cierra la pantalla y regresa al detalle
+                if (usuarioActual != null && usuarioActual.getEmail() != null) {
+                    SharedPreferences prefs = getSharedPreferences("MisAdopciones", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putBoolean("postulacion_" + usuarioActual.getEmail(), true);
+                    editor.putString("perro_" + usuarioActual.getEmail(), nombrePerro != null ? nombrePerro : "");
+                    editor.apply();
+                }
+                Toast.makeText(this, R.string.solicitud_enviada_nos_contactaremos_a_la_brevedad, Toast.LENGTH_LONG).show();
+                finish();
             }
         });
 

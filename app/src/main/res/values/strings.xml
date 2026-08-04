@@ -34,6 +34,7 @@
     <string name="menu_subopcion_2">Subopción 2</string>
     <string name="menu_subopcion_3">Subopción 3</string>
     <string name="cerrar_menu">Cerrar menú</string>
+    <string name="opcion_estado_postulacion">Estado de Postulación</string>
 
     <!-- Social Strings -->
     <string name="desc_facebook">Facebook</string>
@@ -98,4 +99,23 @@
     <string name="enviar_solicitud">Enviar Solicitud</string>
     <string name="volver1">Volver</string>
     <string name="est_s_postul_ndote_para_adoptar_a">Estás postulándote para adoptar a: %1$s</string>
+    <string name="solicitud_enviada_nos_contactaremos_a_la_brevedad">¡Solicitud enviada! Nos contactaremos a la brevedad.</string>
+    <string name="por_favor_complet_los_campos_obligatorios">Por favor completá los campos obligatorios</string>
+    <string name="formulario_de_adopci_n">Formulario de Adopción</string>
+
+    <!-- Estado de Postulacion -->
+    <string name="volver2">Volver</string>
+    <string name="estado_de_tu_postulaci_n">Estado de tu Postulación</string>
+    <string name="postulaci_n_recibida">¡Postulación recibida!</string>
+    <string name="sesi_n_no_iniciada">Sesión no iniciada</string>
+    <string name="deb_s_iniciar_sesi_n_para_ver_el_estado_de_tu_postulaci_n">Debés iniciar sesión para ver el estado de tu postulación.</string>
+    <string name="sin_postulaciones_pendientes">Sin postulaciones pendientes</string>
+    <string name="no_ten_s_ninguna_postulaci_n_activa_actualmente_explor_nuestras_mascotas_y_postulate">No tenés ninguna postulación activa actualmente. ¡Explorá nuestras mascotas y postulate!</string>
+    <string name="tu_postulaci_n_para_adoptar_a_s_ya_fue_recibida_y_nos_contactaremos_a_la_brevedad">Tu postulación para adoptar a %s ya fue recibida y nos contactaremos a la brevedad.</string>
+    <string name="btn_cancelar_postulacion">Cancelar Postulación</string>
+    <string name="titulo_dialogo_cancelar">¿Cancelar postulación?</string>
+    <string name="mensaje_dialogo_cancelar">¿Estás seguro de que querés cancelar tu postulación actual?</string>
+    <string name="confirmar_cancelar">Sí, cancelar</string>
+    <string name="cancelar_dialogo">No, mantener</string>
+    <string name="postulacion_cancelada_exito">Tu postulación ha sido cancelada.</string>
 </resources>
